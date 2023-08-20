@@ -1,0 +1,95 @@
+.education {
+  width: 800px;
+  height: 100%;
+  background-image: var(--evenBackground);
+}
+
+.education .merg .details h4 {
+  font-size: 25px;
+  margin: 5px 0 15px 0;
+  color: var(--wordDetails);
+}
+.education .merg .details h5 {
+  font-size: 25px;
+  line-height: 1.6;
+  font-family: Oswald, sans-serif;
+  margin: 25px 0;
+}
+.education .merg .details .edu{
+  margin: 0 100px;
+}
+.education .merg .details .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 30px;
+}
+.education .merg .details .card {
+  width: 120px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px 10px;
+  background-color: transparent;
+  transition: 0.5s;
+  border: none;
+}
+
+.education .merg .details .card .Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+.education .merg .details .card:hover .Box{  
+  box-shadow:inset 0px 0px 8px black;
+}
+.education .merg .details .Box .logo {
+  width: 80%;
+  height: 80px;
+}
+.education .merg .details .Box h6 {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+  color: var(--btnDownload);
+}
+/* ***** start media ***** */
+@media (max-width: 992px) {
+  .education {
+    width: 100vw;
+    height: 100%;
+  }
+  .education .merg .corses h4 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education .merg .details h4 {
+    font-size: 20px;
+  }
+  .education .merg .details h5 {
+    font-size: 18px;
+  }
+  
+}
+@media (max-width: 420px) {
+  .education .merg .details .edu{
+    margin: 0 20px;
+  }
+  .education .merg .details .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  .education .merg .details .card {
+    width: 120px;
+    height: 150px;
+    padding: 10px;
+    margin: 5px 0px;
+  }
+}

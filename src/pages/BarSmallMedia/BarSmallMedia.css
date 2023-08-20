@@ -1,0 +1,82 @@
+.BarSmallMedia {
+  position: fixed;
+  width: 75px;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  padding: 0px;
+  background-color: var(--Bar);
+  box-shadow: 3px 0px 5px var(--shadowBar);
+  z-index: 100;
+  overflow-y: scroll;
+  display: none;
+}
+.BarSmallMedia::-webkit-scrollbar {
+  display: none;
+}
+.BarSmallMedia .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color:var(--headerBar);
+  box-shadow: var(--shadowHeader);
+}
+.BarSmallMedia .header h1 {
+  margin: 0;
+  font-size: 35px;
+  font-family: 'Playball', cursive;
+  color: var(--textHeader);
+  text-shadow:var(--shadowText);
+}
+.BarSmallMedia .links {
+  margin: 0;
+}
+.BarSmallMedia .links ul {
+  list-style: none;
+  padding: 0;
+}
+.BarSmallMedia .links ul li:not(:last-child) {
+  border-bottom: 1px solid var(--borderBar);
+}
+.BarSmallMedia .links ul li {
+  margin: 10px 0;
+  padding: 10px 1px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.BarSmallMedia .links ul li .bi {
+  color: var(--textmenu);
+  margin-right: 0px;
+  font-size: 25px;
+}
+.BarSmallMedia .links ul li:hover a {
+  color: white;
+  margin-left: 10px;
+}
+
+.BarSmallMedia .links ul li a {
+  text-decoration: none;
+  color: var(--textmenu);
+  font-weight: 400;
+  font-size: 11px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+@media (max-width: 420px) {
+  .BarSmallMedia {
+    display: block;
+    transition: 0.5s;
+    transform: translateX(-100px);
+  }
+  .BarSmallMedia .header h1 {
+    font-size: 25px;
+  }
+}

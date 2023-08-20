@@ -1,0 +1,190 @@
+.contact {
+  width: 100vw;
+  height: 100%; 
+  background-image: var(--evenBackground);
+}
+
+.contact .merg .container{
+  margin: 0 10px;
+}
+.contact .merg .MainContect{
+  width: 100;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .merg .number{  
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--Title);
+}
+.contact .merg .number .middle{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .merg .call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0  10px;
+  margin-bottom: 35px;
+  border-radius: 15px;
+  background-color: transparent;
+  box-shadow: 0px 0px  25px #0000005b;
+}
+.contact .merg .number h3{
+  width: fit-content;
+  position: relative;
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  color: var(--textTitle);
+}
+.contact .merg .number h3 span{
+color: var(--wordDetails);
+font-size: 25px;
+}
+.contact .merg .number h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 80%;
+  margin-top: 60px;
+  background-color: var(--lineTitle);
+}
+.contact .merg .number .phoneNum{
+  margin: 5px;
+  width: 100%;  
+  text-align: start;
+}
+.contact .merg .call .links{
+  display:flex;
+  gap: 10px;
+  justify-content:center
+}
+
+.contact .merg .linkSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0  10px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: transparent;
+  box-shadow: 0px 0px 25px #0000005b;
+}
+
+.contact .merg .phone {
+  width: fit-content;
+  color: var(--btnDownload);
+  margin: 10px;
+}
+.contact .merg .phone .mobile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: 1px solid #0000007d;
+  box-shadow: 0px 0px 5px #0000007d;
+}
+.contact .merg .phone .mobile:hover{
+  box-shadow:none;
+}
+.contact .merg .phone .mobile .image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.contact .merg .phone .image:hover{
+  box-shadow:none;
+}
+.contact .merg .callMe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .merg  .num {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.contact  h1 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;  
+  font-size: 50px;
+  font-family: 'Playball', cursive;
+  border-radius: 8px;
+  color: var(--textHeader);
+  text-shadow:var(--shadowText);
+  background-color:var(--headerBar);
+}
+/* ***** strat media ***** */
+@media (max-width: 1140px) {
+  .contact {
+    width: 100vw;
+    height: 100%;
+  }
+ 
+  .contact .merg .contactForm{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .contact .merg .number{
+    width: 100%;
+    margin: 30px 0;
+    align-items: center;
+  }
+  .contact .merg .MainContect{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contact .merg .number{
+    width: 100%;
+    margin: 30px 0;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact .merg .phone .mobile {
+    width: 40px;
+    height:  40px;
+    font-size: 20px;
+  }
+  .contact .merg .phone .mobile .image {
+    width:  40px;
+    height:  40px;
+  }
+  .contact .merg .number h3{
+    font-size: 20px;
+  }
+  .contact .merg .number h3 span{
+  font-size: 18px;
+  }
+  .contact .merg .number h3::after {
+    margin-top: 50px;
+  }
+  .contact .merg .call {
+    flex-direction: column;
+   }
+}

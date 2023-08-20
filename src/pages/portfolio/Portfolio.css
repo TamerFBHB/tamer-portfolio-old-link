@@ -1,0 +1,125 @@
+.porto {
+  width: 800px;
+  height: 100%;
+  background-image: var(--OddBackground);
+}
+
+.porto .merg .first{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.porto .merg h4{
+  color: var(--wordDetails);  
+  font-family: Oswald, sans-serif;
+}
+.porto .merg h4 span{
+  font-weight: 600;
+  color:  var(--lineH1);
+}
+.porto .merg h5{
+  color:  var(--lineH1);
+}
+.porto .merg .foodera{
+  width: 100%;
+  height: 300px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.porto .merg .foodera .image img{
+  width: 350px;
+  height: 200px;
+  box-shadow: 0px 0px 10px #0000008d;
+}
+.porto .merg .foodera .image:hover img{
+  box-shadow:none ;
+}
+.porto .merg .foodera .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.porto .merg .foodera .image::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.278) ;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.porto .merg .foodera .image:hover::after{
+  opacity: 1;
+  visibility: visible;
+}
+.porto .merg .foodera .bi-eye-fill{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: #8d5b00;
+  font-size: 70px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.porto .merg .foodera .image:hover .bi-eye-fill{
+  visibility: visible;
+  opacity: 1;
+}
+.porto .merg .foodera .btn {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #176ab7 5%, #113f67 100%);
+	background-color:#176ab7;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	&:hover {
+	background-image:linear-gradient(to bottom, #113f67 5%, #176ab7 100%);
+	background-color:#113f67;
+}
+&:active {
+	position:relative;
+	top:1px;
+}
+  }
+
+/* ***** start media ***** */
+
+@media (max-width: 992px) {
+  .porto {
+    width: 100vw;
+    height: 100%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .porto .merg .foodera{
+    width: 100%;
+    height: 250px;
+    margin: 25px 5px;
+  }
+  .porto .merg .foodera .image img{
+    width: 90%;
+    height: 150px;
+    box-shadow: 0px 0px 10px #0000008d;
+  }
+}

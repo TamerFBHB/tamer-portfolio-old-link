@@ -1,0 +1,114 @@
+.about {
+  width: 800px;
+  height: 100%;
+  background-image: var(--evenBackground);
+}
+.about .merg ul {
+  list-style: none;
+}
+.about .merg ul li {
+  font-size: 25px;
+  width: 80%;
+  margin: 10px 0;
+  padding: 15px 3px;
+  color: var(--textTitle);
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  border-bottom: 1px solid var(--BorderInfo);
+}
+.about .merg ul li span {
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--wordDetails);
+}
+.about .profile {
+  width: 100%;
+  padding: 0px 20px 40px 0;
+}
+.about .merg h4 {
+  border-bottom: 3px solid var(--lineTitle);
+  color: var(--TextHeader);
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  margin: 40px 10px 20px;
+  padding-bottom: 10px;
+  width: fit-content;
+  font-size: 30px;
+}
+.about .merg p {
+  font-size: 22px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: var(--wordDetails);
+  margin-bottom: 30px;
+}
+.about .merg p span {
+  font-weight: bold;
+  font-weight: 600;
+}
+.about .merg .download {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #176ab7 5%, #113f67 100%);
+	background-color:#176ab7;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	&:hover {
+	background:linear-gradient(to bottom, #113f67 5%, #176ab7 100%);
+	background-color:#113f67;
+}
+ &:active {
+	position:relative;
+	top:1px;
+}
+ }
+    
+/* ***** start media ***** */
+@media (max-width: 992px) {
+  .about {
+    width: 100vw;
+  }
+  .about .profile {
+    width: 80%;
+  }
+  .about .merg h4 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .about .merg ul {
+    padding: 0;
+  }
+  .about .merg ul li {
+    font-size: 20px;
+    width: 100%;
+    margin: 5px 0;
+  }
+  .about .merg ul li span {
+    font-size: 18px;
+  }
+  .about .profile {
+    width: 100%;
+    padding: 30px 0px
+  }
+  .about .merg p {
+    width: 100%;
+    font-size: 20px;
+    padding: 0;
+  }
+  .about .merg p span {
+    font-weight: 400;
+  }
+}

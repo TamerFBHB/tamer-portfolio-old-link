@@ -1,13 +1,122 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Roboto", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  /* Bar color */
+  --Bar: #113F67;
+  --headerBar: #113F67;
+  --textHeader: #113F67;
+  --shadowHeader: 0px 0px  10px #87C0CD;
+  --borderBar: #F3F9FB;
+  --textmenu: #F3F9FB;
+  --shadowText: 0px 1px 4px white;
+    /* ***background page *** */
+  --OddBackground:  linear-gradient(to right, #F3F9FB 5%, #87C0CD 80%);
+  --evenBackground: linear-gradient(to right, #F3F9FB 5%, #87C0CD 80%);
+  --HomeBackground:#F3F9FB;
+  /***** title h2****/  
+  --Title : black;
+  --lineTitle: #226597;
+  /* home color */
+  --textHello: black; 
+  --frontEnd: #8d5b00;
+  /* *** all page ***/
+  --textTitle:black;
+  --wordDetails: #113F67;
+  --BorderInfo: #87C0CD;
+}
+
+
+@keyframes LetterTT {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(-8px);
+}
+100% {
+  transform: translatex(0px);
+}
+}
+.details {
+  margin: 50px 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.details::-webkit-scrollbar {
+  display: none;
+}
+.merg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 28px 10px 100px;
+}
+.container {
+  margin: 0 10px;
+}
+
+.merg h2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--Title);
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+}
+.merg h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 70px;
+  margin-top: 60px;
+  background-color: var(--lineTitle);
+}
+
+@media (max-width: 992px) {
+ 
+  .merg {
+    width: 98vw;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .details {
+    width: 100%;
+    margin: 40px 0;
+    padding: 0 25px 0 0;
+  }
+  .h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .merg h1 {
+    font-size: 30px;
+  }
+  .merg h2 {
+    font-size: 30px;
+    margin-left: 45px;
+  }
+  .merg h2::after {
+    margin-top: 50px;
+  }
 }

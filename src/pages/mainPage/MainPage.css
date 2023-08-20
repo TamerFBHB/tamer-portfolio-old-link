@@ -1,0 +1,40 @@
+.main {
+  position: absolute;
+  left: 200px;
+  right: 0; /* prevent scroll in media mobile */
+  height: 100%;
+  overflow: hidden;
+}
+
+.mergMain {
+  width: 7356px;
+  display: flex;
+  height: 100%;
+}
+.mergMain .bi-list {
+  position: fixed;
+  top: 28px;
+  left: 10px;
+  font-size: 35px;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+  color: var(--TextHeader);
+  z-index: 100;
+}
+@media (max-width: 992px) {
+  .main {
+    left: 75px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main {
+    left: 0;
+  }
+  .mergMain .bi-list {
+    display: block;
+    color: var(--TextHeader);
+    z-index: 100;
+  }
+}

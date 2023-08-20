@@ -1,0 +1,118 @@
+.sendEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+.sendEmail  .container{
+  margin: 0 10px;
+}
+.sendEmail div {
+  margin: 15px 0;
+}
+.sendEmail h3 {
+  font-size: 30px;
+  color: var(--Title);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.497);
+  box-shadow: 0px 3px 5px var(--lineTitle);
+}
+.sendEmail div label {
+  margin-bottom: 5px;
+  display: block;
+  align-items: center;
+  color: var(--labelContactForm);
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: start;
+}
+.sendEmail div input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #e9e9e9;
+  box-shadow: 0px 0px 5px black;
+}
+.sendEmail div textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px black;
+  background-color: #e9e9e9;
+  padding: 15px;
+  font-size: 18px;
+}
+.sendEmail .btnSend{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.sendEmail .send {
+  position: relative;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #176ab7 5%, #113f67 100%);
+	background-color:#176ab7;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	&:hover {
+	background:linear-gradient(to bottom, #113f67 5%, #176ab7 100%);
+	background-color:#113f67;
+}
+ &:active {
+	position:relative;
+	top:1px;
+}
+ }
+.sendEmail .submit {
+  width: fit-content;
+  padding: 5px 45px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  color: var(--btnDownload);
+  background: transparent;
+  box-shadow: none;
+}
+.sendEmail .send .bi-send-fill {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  padding: 15px 45px 15px 0px;
+  z-index: 100;
+}
+.sendEmail .send:hover {
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .sendEmail h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .sendEmail div label {
+    font-size: 18px;
+  }
+}
