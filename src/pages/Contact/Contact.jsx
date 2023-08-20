@@ -111,8 +111,8 @@ const Contact = ({ contact, moveContact }) => {
                   </div>
                 </div>
                 <div className="header">
-              <h1 >T</h1>
-            </div>
+                  <h1>T</h1>
+                </div>
               </div>
             </div>
           </Container>
@@ -123,3 +123,4 @@ const Contact = ({ contact, moveContact }) => {
 };
 
 export default Contact;
+

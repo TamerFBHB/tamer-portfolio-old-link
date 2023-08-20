@@ -1,15 +1,21 @@
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .main {
   position: absolute;
   left: 200px;
   right: 0; /* prevent scroll in media mobile */
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
 .mergMain {
   width: 7356px;
   display: flex;
-  height: 100%;
+  height:100vh;
 }
 .mergMain .bi-list {
   position: fixed;

@@ -1,5 +1,5 @@
 import "./MainPage.css";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import About from "../about/About";
 import Contact from "../Contact/Contact";
 import Education from "../Education/Education";
@@ -7,6 +7,8 @@ import Portfolio from "../portfolio/Portfolio";
 import BarNav from "../navBar/BarNav";
 import Home from "../Home/Home";
 import BarSmallMedia from "../BarSmallMedia/BarSmallMedia";
+import { RingLoader } from "react-spinners";
+
 
 const MainPage = () => {
   //**** */ move nav bar in small media *****
@@ -87,8 +89,24 @@ const MainPage = () => {
   const Veducation = useRef();
   const Vcontact = useRef();
   const Vportfolio = useRef();
+  // ***** to create loader *****
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 8000);
+  }, []);
+
   return (
     <>
+    <div className="loader">
+      {loading ? (
+        <RingLoader
+        color={"#113F67"} loading={loading} size={100} />
+      ) : (
+
       <div className="main">
         <div className="mergMain">
 
@@ -121,6 +139,8 @@ const MainPage = () => {
           <Contact contact={Vcontact} moveContact={moveContact} />
         </div>
       </div>
+        )}
+        </div>
     </>
   );
 };
