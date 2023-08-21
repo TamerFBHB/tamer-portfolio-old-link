@@ -38,6 +38,7 @@
 .BarSmallMedia .links ul {
   list-style: none;
   padding: 0;
+  margin-top: 30px;
 }
 .BarSmallMedia .links ul li:not(:last-child) {
   border-bottom: 1px solid var(--borderBar);
@@ -45,10 +46,6 @@
 .BarSmallMedia .links ul li {
   margin: 10px 0;
   padding: 10px 1px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
 }
 .BarSmallMedia .links ul li .bi {
   color: var(--textmenu);
@@ -64,10 +61,14 @@
   text-decoration: none;
   color: var(--textmenu);
   font-weight: 400;
-  font-size: 11px;
+  font-size: 15px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 420px) {

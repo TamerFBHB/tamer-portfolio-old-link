@@ -20,25 +20,39 @@ const BarSmallMedia = ({
       <div className="links">
       <ul>
                 <li>
-                  <NavLink id='s-homeLink' onClick={moveHome}>Home</NavLink>
-                  <i class="bi bi-house-fill"  ></i>
+                  <NavLink id='s-homeLink' onClick={moveHome}>
+                    Home
+                    <i class="bi bi-house-fill"  ></i>
+                    </NavLink>
+                  
                 </li>
                 <li>
-                  <NavLink id='s-aboutLink' onClick={moveAbout}>About</NavLink>
-                  <i class="bi bi-person-fill"></i>
+                  <NavLink id='s-aboutLink' onClick={moveAbout}>
+                    About
+                    <i class="bi bi-person-fill"></i>
+                    </NavLink>
+                  
                 </li>
               
                 <li>
-                  <NavLink id='s-educationLink' onClick={moveEducation}>Education</NavLink>
-                  <i class="bi bi-journals"></i>
+                  <NavLink id='s-educationLink' onClick={moveEducation}>
+                    Education
+                    <i class="bi bi-journals"></i>
+                    </NavLink>
                 </li>
                 <li>
-                  <NavLink id='s-portfolioLink' onClick={movePortfolio}>portfolio</NavLink>
-                  <i class="bi bi-folder-fill"></i>
+                  <NavLink id='s-portfolioLink' onClick={movePortfolio}>
+                    portfolio
+                    <i class="bi bi-folder-fill"></i>
+                    </NavLink>
+                  
                 </li>
                 <li>
-                  <NavLink id='s-contactLink' onClick={moveContact}>Contact me</NavLink>
-                  <i class="bi bi-at"></i>
+                  <NavLink id='s-contactLink' onClick={moveContact}>
+                    Contact me
+                    <i class="bi bi-at"></i>
+                    </NavLink>
+                  
                 </li>
             
               </ul>
