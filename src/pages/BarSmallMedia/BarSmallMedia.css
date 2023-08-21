@@ -54,14 +54,13 @@
 }
 .BarSmallMedia .links ul li:hover a {
   color: white;
-  margin-left: 10px;
 }
 
 .BarSmallMedia .links ul li a {
   text-decoration: none;
   color: var(--textmenu);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   transition: 0.5s;

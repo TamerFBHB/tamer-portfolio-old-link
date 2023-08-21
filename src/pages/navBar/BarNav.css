@@ -104,7 +104,7 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 12px;
   }
   .bar .links ul li:hover a {
     margin-left: 0px;
