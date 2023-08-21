@@ -44,12 +44,10 @@
   margin: 10px 0;
   padding: 10px 3px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .bar .links ul li .bi {
   color: var(--textmenu);
-  margin-right: 10px;
   font-size: 25px;
 }
 .bar .links ul li:hover a {
@@ -64,7 +62,11 @@
   font-size: 18px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.5s;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .activeLink{
   color: yellow;
@@ -93,12 +95,14 @@
   .bar .links ul li {
     margin:  0;
     padding: 10px 1px;
-    flex-direction: column-reverse;
   }
   .bar .links ul li .bi {
     margin-right: 0px;
   }  
   .bar .links ul li a {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     font-size: 11px;
   }
   .bar .links ul li:hover a {

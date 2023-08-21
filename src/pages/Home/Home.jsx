@@ -5,14 +5,13 @@ import tamerPhoto from "../../images/tamer.jpg";
 import { Container } from "react-bootstrap";
 import { Textillate } from "textillate-react";
 
-
 const Home = ({ moveHome, moveContact, home }) => {
   return (
     <>
       <div ref={home} className="home" onClick={moveHome}>
         <div className="merg">
           <Container>
-          <div className="tag-wrap ">
+            <div className="tag-wrap ">
               <img src={tamerPhoto} alt="" className="tamerPhoto" />
             </div>
             <div class="hexagone"></div>
@@ -20,24 +19,29 @@ const Home = ({ moveHome, moveContact, home }) => {
               <h1>Tamer Fouad</h1>
 
               <div className="FrontEnd">
-              <p >
-            <Textillate            
-              option={{
-                in: {
-                  effect: "fadeInDownBig",
-                  delay: 20,
-                  delayScale: 3,
-                },
-                out: { effect: "bounceOut", sequence: true, delay: 20,
-                delayScale: 3,reverse:true },
+                <p>
+                  <Textillate
+                    option={{
+                      in: {
+                        effect: "fadeInDownBig",
+                        delay: 20,
+                        delayScale: 3,
+                      },
+                      out: {
+                        effect: "bounceOut",
+                        sequence: true,
+                        delay: 20,
+                        delayScale: 3,
+                        reverse: true,
+                      },
 
-                type: "char",
-                loop: true,
-              }}
-            >
-              Front End Developer
-            </Textillate>
-          </p>
+                      type: "char",
+                      loop: true,
+                    }}
+                  >
+                    Front End Developer
+                  </Textillate>
+                </p>
               </div>
 
               <div className="social">

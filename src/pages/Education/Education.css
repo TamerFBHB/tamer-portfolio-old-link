@@ -42,10 +42,11 @@
   transition: 0.5s;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px #00000073;
 }
 .education .merg .details .card:hover .Box{  
-  box-shadow:inset 0px 0px 8px black;
+  box-shadow:inset 0px 0px 8px #00000076;
+  
 }
 .education .merg .details .Box .logo {
   width: 80%;
