@@ -100,7 +100,7 @@ body::-webkit-scrollbar {
 }
 @media (max-width: 768px) {
   .details {
-    width: 100%;
+    width: 93%;
     margin: 40px 0;
     padding: 0 25px 0 0;
   }

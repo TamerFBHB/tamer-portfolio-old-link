@@ -11,6 +11,7 @@ import { RingLoader } from "react-spinners";
 
 
 const MainPage = () => {
+  
   //**** */ move nav bar in small media *****
   const navbar =()=>{
     document.getElementById("BarSmallMedia").style.transform="translatex(0)"
