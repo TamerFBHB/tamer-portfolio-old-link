@@ -109,6 +109,9 @@ body::-webkit-scrollbar {
   }
 }
 @media (max-width: 420px) {
+  .details {
+    width: 100%;
+  }
   .merg h1 {
     font-size: 30px;
   }

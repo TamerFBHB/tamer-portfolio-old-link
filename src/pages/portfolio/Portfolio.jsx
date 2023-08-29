@@ -3,6 +3,7 @@ import "./Portfolio.css";
 import { Container } from "react-bootstrap";
 import foodera from "../../images/foodera.png";
 import healthy from "../../images/midical.png";
+import impreza from "../../images/impreza.png";
 import { NavLink } from "react-router-dom";
 
 const Portfolio = ({ portfolio, movePortfolio }) => {
@@ -54,6 +55,26 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
               <NavLink
                 className="btn"
                 to="https://healthcare-7b900.web.app/"
+                target="_blank"
+              >
+                Live Preview
+              </NavLink>
+              
+            </div>
+
+            <div className="foodera">
+              <NavLink
+                className="image"
+                to="https://impreza-project.web.app/"
+                target="_blank"
+              >
+                <img src={impreza} alt="" />
+                <i class="bi bi-eye-fill"></i>
+              </NavLink>
+
+              <NavLink
+                className="btn"
+                to="https://impreza-project.web.app/"
                 target="_blank"
               >
                 Live Preview

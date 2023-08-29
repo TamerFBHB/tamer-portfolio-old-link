@@ -1,6 +1,6 @@
 import "./About.css";
 import { Container } from "react-bootstrap";
-import MyCV from "../../component/Download/Tamer Fouad_CV.pdf";
+import { Link } from "react-router-dom";
 
 
 const About = ({ about, moveAbout }) => {
@@ -39,13 +39,10 @@ const About = ({ about, moveAbout }) => {
                   other related technologies. I always make sure my code is
                   clean, well organized, and optimized for performance.
                 </p>
-                <a
-                  href={MyCV}
-                  download="Tamer Fouad_CV.pdf"
-                  className="download"
-                >
+                <Link to="../../component/Download/Tamer Fouad_CV.pdf"
+                  target="_blank" download  className="download">
                   Download CV
-                </a>
+                </Link>
               </div>
            
           </Container>
