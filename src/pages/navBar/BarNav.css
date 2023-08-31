@@ -70,8 +70,10 @@
   width: 100%;
 }
 .activeLink{
-  color: yellow;
-  box-shadow: 1px 1px 3px yellow;
+  color: yellow !important;
+}
+.noActiveLink{
+  color: white;
 }
 /* ***** media small ***** */
 

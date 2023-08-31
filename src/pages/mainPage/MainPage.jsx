@@ -12,32 +12,21 @@ import { RingLoader } from "react-spinners";
 
 const MainPage = () => {
   
-  //**** */ move nav bar in small media *****
-  const navbar =()=>{
-    document.getElementById("BarSmallMedia").style.transform="translatex(0)"
-  }
-  const navbarClose =()=>{
-    document.getElementById("BarSmallMedia").style.transform="translatex(-100px)"
-  }
-  //**** end move nav bar in small media *****
-  // ***** active link *****
-  const linkWhite = ()=>{
-    var allLinks = document.querySelectorAll(".links>ul>li>a");
-    allLinks.forEach((e)=>{
-      e.style.color="white";
-    })
-  }
-   // ***** end active link *****
+  //**** */ move to close or open nav bar in small media ***** 
+  const [stateClose , setstateClose] = useState()
+  // ***** color yellow link *****
+  const [stateColor , sestateColor]= useState(0)
+
+   // ***** scrollIntoView for pages *****
   const moveHome = () => {
     Vhome.current.scrollIntoView({
       behavior: "smooth",
       inline: "start",
       block: "start",
     });
-    linkWhite();
-    document.getElementById("s-homeLink").style.color="yellow";
-    document.getElementById("homeLink").style.color="yellow";
-    navbarClose()
+    sestateColor(0)
+    setstateClose(0)
+    
   };
   const moveAbout = () => {
     VAbout.current.scrollIntoView({
@@ -45,10 +34,8 @@ const MainPage = () => {
       inline: "start",
       block: "start",
     });
-    linkWhite();
-    document.getElementById("s-aboutLink").style.color="yellow";
-    document.getElementById("aboutLink").style.color="yellow";
-    navbarClose()
+    sestateColor(1)
+    setstateClose(0)
   };
 
   const moveEducation = () => {
@@ -57,10 +44,8 @@ const MainPage = () => {
       inline: "start",
       block: "start",
     });
-    linkWhite();
-    document.getElementById("s-educationLink").style.color="yellow";
-    document.getElementById("educationLink").style.color="yellow";
-    navbarClose()
+    sestateColor(2)
+    setstateClose(0)
   };
   const movePortfolio = () => {
     Vportfolio.current.scrollIntoView({
@@ -68,10 +53,8 @@ const MainPage = () => {
       inline: "start",
       block: "start",
     });
-    linkWhite();
-    document.getElementById("s-portfolioLink").style.color="yellow";
-    document.getElementById("portfolioLink").style.color="yellow";
-    navbarClose()
+    sestateColor(3)
+    setstateClose(0)
   };
   const moveContact = () => {
     Vcontact.current.scrollIntoView({
@@ -79,10 +62,8 @@ const MainPage = () => {
       inline: "start",
       block: "start",
     });
-    linkWhite();
-    document.getElementById("s-contactLink").style.color="yellow";
-    document.getElementById("contactLink").style.color="yellow";
-    navbarClose()
+    sestateColor(4)
+    setstateClose(0)
   };
 
   const Vhome = useRef();
@@ -97,7 +78,7 @@ const MainPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 3000);
   }, []);
 
   return (
@@ -111,9 +92,10 @@ const MainPage = () => {
       <div className="main">
         <div className="mergMain">
 
-          <i className="bi bi-list" id="menu" onClick={navbar}></i>
+          <i className="bi bi-list" id="menu" onClick={() => setstateClose("open")}></i>
 
           <BarNav
+            stateColor = {stateColor}
             moveHome={moveHome}
             moveAbout={moveAbout}
             moveEducation={moveEducation}
@@ -122,6 +104,8 @@ const MainPage = () => {
           />
 
           <BarSmallMedia
+            stateClose={stateClose}
+            stateColor = {stateColor}
             moveHome={moveHome}
             moveAbout={moveAbout}
             moveEducation={moveEducation}

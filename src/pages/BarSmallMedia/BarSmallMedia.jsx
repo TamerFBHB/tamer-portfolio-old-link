@@ -3,16 +3,16 @@ import "./BarSmallMedia.css";
 import { NavLink } from "react-router-dom";
 
 const BarSmallMedia = ({
-  navbarClose,
+  stateClose,
+  stateColor,
   moveHome,
   moveAbout,
-  moveExperience,
   moveEducation,
   movePortfolio,
   moveContact,
 }) => {
   return (
-    <div className="BarSmallMedia" id="BarSmallMedia">
+    <div className={(stateClose ===0) ? "close  BarSmallMedia" : "open  BarSmallMedia"}  id="BarSmallMedia">
       <div className="header">
         <h1>T</h1>
       </div>
@@ -20,14 +20,14 @@ const BarSmallMedia = ({
       <div className="links">
       <ul>
                 <li>
-                  <NavLink id='s-homeLink' onClick={moveHome}>
+                  <NavLink className={stateColor ===0 ? "activeLink " : "noActiveLink"} onClick={moveHome}>
                     Home
                     <i class="bi bi-house-fill"  ></i>
                     </NavLink>
                   
                 </li>
                 <li>
-                  <NavLink id='s-aboutLink' onClick={moveAbout}>
+                  <NavLink  className={stateColor ===1 ? "activeLink " : "noActiveLink"} onClick={moveAbout}>
                     About
                     <i class="bi bi-person-fill"></i>
                     </NavLink>
@@ -35,20 +35,20 @@ const BarSmallMedia = ({
                 </li>
               
                 <li>
-                  <NavLink id='s-educationLink' onClick={moveEducation}>
+                  <NavLink  className={stateColor ===2 ? "activeLink " : "noActiveLink"} onClick={moveEducation}>
                     Education
                     <i class="bi bi-journals"></i>
                     </NavLink>
                 </li>
                 <li>
-                  <NavLink id='s-portfolioLink' onClick={movePortfolio}>
+                  <NavLink  className={stateColor ===3 ? "activeLink " : "noActiveLink"} onClick={movePortfolio}>
                     portfolio
                     <i class="bi bi-folder-fill"></i>
                     </NavLink>
                   
                 </li>
                 <li>
-                  <NavLink id='s-contactLink' onClick={moveContact}>
+                  <NavLink className={stateColor ===4 ? "activeLink" : "noActiveLink"} onClick={moveContact}>
                     Contact me
                     <i class="bi bi-at"></i>
                     </NavLink>

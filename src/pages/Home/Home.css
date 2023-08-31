@@ -160,10 +160,9 @@
     height: 100%;
   }
   .home .merg .tamerPhoto{
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     top: 10%;
-
   }
 }
 
@@ -181,8 +180,8 @@
     position: absolute;
     left: 5%;
     top: 8%;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
   .home .merg .name {
     right: 20%;
