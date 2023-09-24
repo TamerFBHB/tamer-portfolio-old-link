@@ -12,7 +12,7 @@ const BarSmallMedia = ({
   moveContact,
 }) => {
   return (
-    <div className={(stateClose ===0) ? "close  BarSmallMedia" : "open  BarSmallMedia"}  id="BarSmallMedia">
+    <div className={(stateClose ===0) ? "close  BarSmallMedia" : "open  BarSmallMedia"} >
       <div className="header">
         <h1>T</h1>
       </div>
