@@ -19,7 +19,7 @@ const BarNav = ({
       <div className="links">
         <ul>
           <li>
-            <NavLink id="homeLink" className={stateColor ===0 ? "activeLink" : "noActiveLink"} onClick={ moveHome}>
+            <NavLink id="homeLink" className={stateColor === 0 ? "activeLink" : "noActiveLink"} onClick={ moveHome}>
               Home
               <i className="bi bi-house-fill"></i>
             </NavLink>

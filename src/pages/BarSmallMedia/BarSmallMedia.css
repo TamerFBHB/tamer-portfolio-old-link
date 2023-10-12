@@ -21,9 +21,14 @@
   margin: 15px;
   width: 50px;
   height: 50px;
-  border-radius: 15px;
+  border-radius: 8px;
   background-color:var(--headerBar);
-  box-shadow: var(--shadowHeader);
+
+  border: 2px solid #0000;
+  background: linear-gradient(var(--headerBar), var(--headerBar)) padding-box, 
+              linear-gradient( var(--angle), #070707, #687aff) border-box;
+  animation: 8s rotate linear infinite;
+
 }
 .BarSmallMedia .header h1 {
   margin: 0;
@@ -83,4 +88,16 @@
   .BarSmallMedia .header h1 {
     font-size: 25px;
   }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
