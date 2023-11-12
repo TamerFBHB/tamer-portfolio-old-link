@@ -48,7 +48,7 @@ const BarSmallMedia = ({
                   
                 </li>
                 <li>
-                  <NavLink className={stateColor ===4 ? "activeLink" : "noActiveLink"} onClick={moveContact}>
+                  <NavLink className={`me ${stateColor ===4 ? "activeLink" : "noActiveLink"}`} onClick={moveContact}>
                     Contact me
                     <i class="bi bi-at"></i>
                     </NavLink>

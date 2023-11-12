@@ -175,6 +175,7 @@ font-size: 25px;
     width:  40px;
     height:  40px;
   }
+
   .contact .merg .number h3{
     font-size: 20px;
   }
@@ -187,4 +188,5 @@ font-size: 25px;
   .contact .merg .call {
     flex-direction: column;
    }
+
 }

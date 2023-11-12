@@ -102,7 +102,7 @@ body::-webkit-scrollbar {
   .details {
     width: 93%;
     margin: 40px 0;
-    padding: 0 25px 0 0;
+    padding: 0 25px 60px 0;
   }
   .h2 {
     font-size: 30px;
@@ -110,7 +110,7 @@ body::-webkit-scrollbar {
 }
 @media (max-width: 420px) {
   .details {
-    width: 100%;
+    width: 100%;   
   }
   .merg h1 {
     font-size: 30px;

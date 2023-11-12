@@ -110,7 +110,7 @@ const Contact = ({ contact, moveContact }) => {
                     </a>
                   </div>
                 </div>
-                <div className="header">
+                <div className="header T">
                   <h1>T</h1>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import foodera from "../../images/foodera.png";
 import healthy from "../../images/midical.png";
 import impreza from "../../images/impreza.png";
+import megano from "../../images/megano.png"
 import { NavLink } from "react-router-dom";
 
 const Portfolio = ({ portfolio, movePortfolio }) => {
@@ -21,7 +22,7 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
             </h5>
 
             <h4 className="first">
-              this projects design with React and Bootstrap.
+              this projects design with React.
             </h4>
             <div className="foodera">
               <NavLink
@@ -75,6 +76,25 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
               <NavLink
                 className="btn"
                 to="https://impreza-project.web.app/"
+                target="_blank"
+              >
+                Live Preview
+              </NavLink>
+              
+            </div>
+            <div className="foodera">
+              <NavLink
+                className="image"
+                to="https://megaone-96310.web.app/"
+                target="_blank"
+              >
+                <img src={megano} alt="" />
+                <i class="bi bi-eye-fill"></i>
+              </NavLink>
+
+              <NavLink
+                className="btn"
+                to="https://megaone-96310.web.app/"
                 target="_blank"
               >
                 Live Preview
