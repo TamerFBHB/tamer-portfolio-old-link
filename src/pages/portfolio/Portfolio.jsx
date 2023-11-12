@@ -12,6 +12,7 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
     <div ref={portfolio} className="porto" onClick={movePortfolio}>
       <div className="merg">
         <div className="headerTTT">
+          
           <h2>Portfolio</h2>
         </div>
         <div className="details">
@@ -24,10 +25,10 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
             <h4 className="first">
               this projects design with React.
             </h4>
-            <div className="foodera">
+            <div className="web">
               <NavLink
                 className="image"
-                to="https://foodera-code.web.app/"
+                to="https://web-code.web.app/"
                 target="_blank"
               >
                 <img src={foodera} alt="" />
@@ -36,14 +37,14 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
 
               <NavLink
                 className="btn"
-                to="https://foodera-code.web.app/"
+                to="https://web-code.web.app/"
                 target="_blank"
               >
                 Live Preview
               </NavLink>
             </div>
 
-            <div className="foodera">
+            <div className="web">
               <NavLink
                 className="image"
                 to="https://healthcare-7b900.web.app/"
@@ -63,7 +64,7 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
               
             </div>
 
-            <div className="foodera">
+            <div className="web">
               <NavLink
                 className="image"
                 to="https://impreza-project.web.app/"
@@ -82,7 +83,7 @@ const Portfolio = ({ portfolio, movePortfolio }) => {
               </NavLink>
               
             </div>
-            <div className="foodera">
+            <div className="web">
               <NavLink
                 className="image"
                 to="https://megaone-96310.web.app/"
