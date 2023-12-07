@@ -5,7 +5,7 @@ import megano from "../../images/megano.png";
 import Hosting from "../../images/Hosting.png"
 
 const DataPortfolio = [{
-    title: "Foodera — Responsive Food Landing Page Template",
+    title: "Foodera — Food Landing Page Template",
     url: "https://foodera-code.web.app/",
     image: foodera,
     show: "foodera",
@@ -14,7 +14,7 @@ const DataPortfolio = [{
     feature:"Top Features:"
 },
 {
-    title: "MediTro - Doctor, Medical & Healthcare React Template",
+    title: "MediTro - Medical & Healthcare Page Template",
     url: "https://healthcare-7b900.web.app/",
     image: healthy,
     show: "healthy",
@@ -23,7 +23,7 @@ const DataPortfolio = [{
     feature:"Top Features:"
 },
 {
-    title: "Impreza — The Most Flexible Builder",
+    title: "Impreza — Flexible Builder Page Template",
     url: "https://impreza-project.web.app//",
     image: impreza,
     show: "impreza",

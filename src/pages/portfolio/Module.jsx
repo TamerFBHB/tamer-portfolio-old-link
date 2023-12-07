@@ -28,6 +28,7 @@ const Module = ({ show, setShow }) => {
 
                             <div className="webDetails">
                                 <div className="titleModule"><h3>{e.title}</h3></div>
+
                                 <div className="body">
                                     <div className="photo">
                                         <img src={e.image} alt="" />
@@ -41,7 +42,6 @@ const Module = ({ show, setShow }) => {
                                         <h3>* Fully Responsive Design</h3>
                                         <h3>* Clean and Beautiful Design</h3>
                                         <h3>* Fully Responsive Design</h3>
-
                                     </div>
                                 </div>
                             </div>

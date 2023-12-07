@@ -21,11 +21,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px;
+  gap: 0px;  
 }
 .porto .merg .webSite .image{
   width: 50%;  
   height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .porto .merg .webSite .image img{
   width: 100%;
@@ -35,12 +39,7 @@
 .porto .merg .webSite .image:hover img{
   box-shadow:none ;
 }
-.porto .merg .webSite .image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+
 .porto .merg .webSite .image::after{
   content: "";
   position: absolute;
@@ -132,5 +131,25 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     width: 90%;
     height: 150px;
     box-shadow: 0px 0px 10px #0000008d;
+  }
+}
+@media (max-width: 420px){
+  .porto .merg .webSite{
+    height: 100px;
+  }
+  .porto .merg .webSite .buttons{
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 0px;
+  }
+  .porto .merg .webSite .btn {
+    width:100%;
+    height: 40px;
+  }
+  .porto .merg .webSite .image{
+  height: 100%;
+  }
+  .porto .merg .webSite .image img{
+    height: 100%;
   }
 }
