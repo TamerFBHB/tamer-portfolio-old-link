@@ -75,13 +75,13 @@
     color:black
 }
 .module .webDetails .body{
-    width: 95%;    
+    width: 100%;    
     min-height: 70%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top:20px;
     gap: 10px;
 }
 .module .webDetails .photo {
@@ -102,11 +102,14 @@
   flex-basis: 400px;
   padding: 20px;
   border-radius: 10px;
-  height: 60%;
+  height: 70%;
   background-color: white;
   border: 1px solid gray;
   box-shadow: -1px 2px 10px #00000098;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+.module .webDetails .detail::-webkit-scrollbar {
+  display: none;
 }
 .module .webDetails .detail h3{
     font-size: 18px;
@@ -177,6 +180,7 @@
 
 .module .webDetails .body{
     padding-top: 5px;
+    width: 95%;    
 }
 .module .webDetails .photo {
   gap: 10px;

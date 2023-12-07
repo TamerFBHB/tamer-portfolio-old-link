@@ -41,7 +41,6 @@ const Module = ({ show, setShow }) => {
                                         <h3 className="feature">{e.feature}</h3>
                                         <h3>* Fully Responsive Design</h3>
                                         <h3>* Clean and Beautiful Design</h3>
-                                        <h3>* Fully Responsive Design</h3>
                                     </div>
                                 </div>
                             </div>
