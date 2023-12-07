@@ -4,12 +4,6 @@
   background-image: var(--OddBackground);
 }
 
-.porto .merg .first{
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-}
-
 .porto .merg h4{
   color: var(--wordDetails);  
   font-family: Oswald, sans-serif;
@@ -21,31 +15,33 @@
 .porto .merg h5{
   color:  var(--lineH1);
 }
-.porto .merg .web{
+.porto .merg .webSite{
   width: 100%;
-  height: 300px;
-  margin: 40px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 25px;
+  gap: 0px;
 }
-.porto .merg .web .image img{
-  width: 350px;
-  height: 200px;
+.porto .merg .webSite .image{
+  width: 50%;  
+  height: 90%;
+}
+.porto .merg .webSite .image img{
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 0px 10px #0000008d;
 }
-.porto .merg .web .image:hover img{
+.porto .merg .webSite .image:hover img{
   box-shadow:none ;
 }
-.porto .merg .web .image{
+.porto .merg .webSite .image{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.porto .merg .web .image::after{
+.porto .merg .webSite .image::after{
   content: "";
   position: absolute;
   top: 0;
@@ -57,11 +53,11 @@
   visibility: hidden;
   opacity: 0;
 }
-.porto .merg .web .image:hover::after{
+.porto .merg .webSite .image:hover::after{
   opacity: 1;
   visibility: visible;
 }
-.porto .merg .web .bi-eye-fill{
+.porto .merg .webSite .bi-eye-fill{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,28 +68,42 @@
   opacity: 0;
   transition: 0.5s;
 }
-.porto .merg .web .image:hover .bi-eye-fill{
+.porto .merg .webSite .image:hover .bi-eye-fill{
   visibility: visible;
   opacity: 1;
 }
-.porto .merg .web .btn {
-  width: 200px;
+.porto .merg .webSite .buttons{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 20px;
+}
+.porto .merg .webSite .btn {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 	box-shadow: 0px 10px 14px -7px #276873;
-	background:linear-gradient(to bottom, #176ab7 5%, #113f67 100%);
-	background-color:#176ab7;
+
+  background-image: linear-gradient(to right, #176ab7 0%, #113f67 51%, #176ab7 100%);
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-size: 200% auto;
+  transition: 0.5s;  
+
 	border-radius:8px;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:20px;
+	font-size: 100% ;
 	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
 	&:hover {
-	background-image:linear-gradient(to bottom, #113f67 5%, #176ab7 100%);
-	background-color:#113f67;
+    background-position: right center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 }
 &:active {
 	position:relative;
@@ -113,12 +123,12 @@
 }
 
 @media (max-width: 768px) {
-  .porto .merg .web{
+  .porto .merg .webSite{
     width: 100%;
     height: 250px;
     margin: 25px 5px;
   }
-  .porto .merg .web .image img{
+  .porto .merg .webSite .image img{
     width: 90%;
     height: 150px;
     box-shadow: 0px 0px 10px #0000008d;

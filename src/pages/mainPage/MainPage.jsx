@@ -12,8 +12,13 @@ import { RingLoader } from "react-spinners";
 
 const MainPage = () => {
   
-  //**** */ move to close or open nav bar in small media ***** 
+  //****  move to close or open nav bar in small media ***** 
   const [stateClose , setstateClose] = useState()
+
+    //show module
+    const [ show , setShow] = useState()
+
+
   // ***** color yellow link *****
   const [stateColor , sestateColor]= useState(0)
 
@@ -26,6 +31,7 @@ const MainPage = () => {
     });
     sestateColor(0)
     setstateClose(0)
+    setShow(0)
     
   };
   const moveAbout = () => {
@@ -36,6 +42,7 @@ const MainPage = () => {
     });
     sestateColor(1)
     setstateClose(0)
+    setShow(0)
   };
 
   const moveEducation = () => {
@@ -46,6 +53,7 @@ const MainPage = () => {
     });
     sestateColor(2)
     setstateClose(0)
+    setShow(0)
   };
   const movePortfolio = () => {
     Vportfolio.current.scrollIntoView({
@@ -64,6 +72,7 @@ const MainPage = () => {
     });
     sestateColor(4)
     setstateClose(0)
+    setShow(0)
   };
 
   const Vhome = useRef();
@@ -80,6 +89,7 @@ const MainPage = () => {
       setLoading(false);
     }, 3000);
   }, []);
+
 
   return (
     <>
@@ -119,7 +129,7 @@ const MainPage = () => {
 
           <Education education={Veducation} moveEducation={moveEducation} />
 
-          <Portfolio portfolio={Vportfolio} movePortfolio={movePortfolio} />
+          <Portfolio  show={show} setShow={setShow} portfolio={Vportfolio} movePortfolio={movePortfolio} />
 
           <Contact contact={Vcontact} moveContact={moveContact} />
         </div>
