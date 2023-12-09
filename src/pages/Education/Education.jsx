@@ -7,6 +7,7 @@ import Javascript from "../../images/java.png";
 import react from "../../images/react.png";
 import Bootstrap from "../../images/Bootstrap.png";
 import tailwind from "../../images/tailwind.png"
+import sass from "../../images/sass.png"
 
 const courses = [
   {
@@ -32,6 +33,10 @@ const courses = [
   {
     course:"Tailwind",
     logo: tailwind,
+  },
+  {
+    course:"Sass",
+    logo: sass,
   }
 ];
 const Education = ({ education, moveEducation }) => {
