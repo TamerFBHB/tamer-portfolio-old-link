@@ -1,13 +1,15 @@
 /* details*/
 .module {
   position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 90%;
-  padding: 0 40px;
+  top: 15%;
+  left: 0px;
+  width:100%;
+  min-height: 50%;
   backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
   z-index: 1000;
 }
 .mainModule {
@@ -18,8 +20,8 @@
 /* ### close ### */
 .CloseBar {
   position: absolute;
-  top: 30px;
-  right: 60px;
+  top: 10px;
+  right: 80px;
 }
 .BarClose {
   position: relative;
@@ -48,20 +50,21 @@
 /* ########## */
 /* show and hide details */
 .disapeare {
-  display: none;
+  visibility: hidden;
+  transform: scale(0,0);
+  opacity: 0;
 }
 .apeare {
-  display: block;
+  visibility: visible;
+  transform: scale(1,1);
+  opacity: 1;
 }
 /* ########## */
 /* design the details */
 .module .webDetails {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 60px 20px;
 }
 .titleModule{
     width: 100%;
@@ -76,15 +79,16 @@
 }
 .module .webDetails .body{
     width: 100%;    
-    min-height: 70%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
-    padding-top:20px;
+    padding:20px;
     gap: 10px;
 }
 .module .webDetails .photo {
+  width: 50%;
   flex-basis: 300px;
   display: flex;
   justify-content: center;
@@ -94,15 +98,15 @@
 }
 .module .webDetails .photo img {
   width: 300px;
-  height: 220px;
+  height: 210px;
   border-radius: 12px;
   border: 1px solid black;
 }
 .module .webDetails .detail {
-  flex-basis: 400px;
+  width: 50%;
   padding: 20px;
   border-radius: 10px;
-  height: 70%;
+  height: 100%;
   background-color: white;
   border: 1px solid gray;
   box-shadow: -1px 2px 10px #00000098;
@@ -167,12 +171,25 @@
   }
 }
 /* ######## */
-
-@media (max-width:420px) {
+@media (max-width:992px) {
   .module{
-    top: 50%;
-    padding: 0 5px;
+    top: 10%;
+    left: -20px;
   }
+}
+@media (max-width:420px) {
+  .module{  
+    left: 0px;
+  }
+  .mainModule {
+    padding: 25px 5px;
+  }
+  .module .webDetails {
+    padding: 20px 5px;
+}
+.module .webDetails .body{
+  padding:0px;
+}
   .CloseBar {
     top: 10px;
     right: 10px;

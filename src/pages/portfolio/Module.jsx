@@ -14,7 +14,8 @@ const Module = ({ show, setShow }) => {
         <div>
             {DataPortfolio.map((e) => {
                 return (
-                    <div className={`module  ${show === 0 ? "disapeare" : " "} ${show === e.show ? "apeare" : "disapeare "}`}>
+                    <div className={`module  ${show === 0 ? "disapeare" : " "}
+                        ${show === e.show ? "apeare" : "disapeare "}`}>
 
                         <div className={`mainModule `}>
 
