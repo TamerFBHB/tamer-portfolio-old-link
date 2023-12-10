@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import DataPortfolio from "./Data-Portfolio";
 import Module from "./Module";
 
+
 const Portfolio = ({ show, setShow, portfolio, movePortfolio }) => {
   return (
     <div ref={portfolio} className="porto" onClick={movePortfolio}>
@@ -33,7 +34,7 @@ const Portfolio = ({ show, setShow, portfolio, movePortfolio }) => {
                       <i class="bi bi-eye-fill"></i>
                     </NavLink>
 
-                    <div className="buttons">
+                    <div className="buttons" >
                       <NavLink className="btn" to={e.url} target="_blank" >
                         Live Preview
                       </NavLink>

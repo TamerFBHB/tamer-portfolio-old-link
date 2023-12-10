@@ -11,18 +11,17 @@ import { RingLoader } from "react-spinners";
 
 
 const MainPage = () => {
-  
   //****  move to close or open nav bar in small media ***** 
-  const [stateClose , setstateClose] = useState()
+  const [stateClose, setstateClose] = useState()
 
-    //show module
-    const [ show , setShow] = useState()
+  //show module
+  const [show, setShow] = useState()
 
 
   // ***** color yellow link *****
-  const [stateColor , sestateColor]= useState(0)
+  const [stateColor, sestateColor] = useState(0)
 
-   // ***** scrollIntoView for pages *****
+  // ***** scrollIntoView for pages *****
   const moveHome = () => {
     Vhome.current.scrollIntoView({
       behavior: "smooth",
@@ -32,7 +31,7 @@ const MainPage = () => {
     sestateColor(0)
     setstateClose(0)
     setShow(0)
-    
+
   };
   const moveAbout = () => {
     VAbout.current.scrollIntoView({
@@ -90,52 +89,50 @@ const MainPage = () => {
     }, 3000);
   }, []);
 
-
   return (
     <>
-    <div className="loader">
-      {loading ? (
-        <RingLoader
-        color={"#113F67"} loading={loading} size={100} />
-      ) : (
+      <div className="loader">
+        {loading ? (
+          <RingLoader
+            color={"#113F67"} loading={loading} size={100} />
+        ) : (
 
-      <div className="main">
-        <div className="mergMain">
+          <div className="main">
+            <div className="mergMain">
+              <i className="bi bi-list" id="menu" onClick={() => setstateClose("open")}></i>
 
-          <i className="bi bi-list" id="menu" onClick={() => setstateClose("open")}></i>
+              <BarNav
+                stateColor={stateColor}
+                moveHome={moveHome}
+                moveAbout={moveAbout}
+                moveEducation={moveEducation}
+                movePortfolio={movePortfolio}
+                moveContact={moveContact}
+              />
 
-          <BarNav
-            stateColor = {stateColor}
-            moveHome={moveHome}
-            moveAbout={moveAbout}
-            moveEducation={moveEducation}
-            movePortfolio={movePortfolio}
-            moveContact={moveContact}
-          />
+              <BarSmallMedia
+                stateClose={stateClose}
+                stateColor={stateColor}
+                moveHome={moveHome}
+                moveAbout={moveAbout}
+                moveEducation={moveEducation}
+                movePortfolio={movePortfolio}
+                moveContact={moveContact}
+              />
 
-          <BarSmallMedia
-            stateClose={stateClose}
-            stateColor = {stateColor}
-            moveHome={moveHome}
-            moveAbout={moveAbout}
-            moveEducation={moveEducation}
-            movePortfolio={movePortfolio}
-            moveContact={moveContact}
-          />
+              <Home home={Vhome} moveHome={moveHome} moveContact={moveContact} />
 
-          <Home home={Vhome} moveHome={moveHome} moveContact={moveContact} />
+              <About about={VAbout} moveAbout={moveAbout} />
 
-          <About about={VAbout} moveAbout={moveAbout} />
+              <Education education={Veducation} moveEducation={moveEducation} />
 
-          <Education education={Veducation} moveEducation={moveEducation} />
+              <Portfolio  show={show} setShow={setShow} portfolio={Vportfolio} movePortfolio={movePortfolio} />
 
-          <Portfolio  show={show} setShow={setShow} portfolio={Vportfolio} movePortfolio={movePortfolio} />
-
-          <Contact contact={Vcontact} moveContact={moveContact} />
-        </div>
-      </div>
+              <Contact contact={Vcontact} moveContact={moveContact} />
+            </div>
+          </div>
         )}
-        </div>
+      </div>
     </>
   );
 };

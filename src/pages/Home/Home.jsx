@@ -9,6 +9,7 @@ const Home = ({ moveHome, moveContact, home }) => {
   return (
     <>
       <div ref={home} className="home" onClick={moveHome}>
+        
         <div className="merg">
           <Container>
             <div className="tag-wrap ">

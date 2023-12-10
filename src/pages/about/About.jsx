@@ -9,6 +9,7 @@ const About = ({ about, moveAbout }) => {
     
     
       <div ref={about} className="about" onClick={moveAbout}>
+        
         <div className="merg">
           
             <h2>About</h2>

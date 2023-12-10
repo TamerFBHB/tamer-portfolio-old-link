@@ -30,15 +30,16 @@
 .BarClose {
   position: relative;
   right: 0;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
 .BarClose .Barone,
 .BarClose .Bartwo {
   position: absolute;
   top: 50%;
-  width: 30px;
-  height: 2px;
+  width: 25px;
+  height: 4px;
   background-color: #780404;
   transition: 0.5s;
 }
@@ -48,8 +49,8 @@
 .BarClose .Bartwo {
   transform: rotate(135deg);
 }
-.BarClose:hover {
-  animation: span 0.5s linear;
+.BarClose:hover  {
+  animation: span 0.5s linear;  
 }
 /* ########## */
 /* show and hide details */
