@@ -2,7 +2,8 @@ import foodera from "../../images/foodera.png";
 import healthy from "../../images/midical.png";
 import impreza from "../../images/impreza.png";
 import megano from "../../images/megano.png";
-import Hosting from "../../images/Hosting.png"
+import Hosting from "../../images/Hosting.png";
+import whale from "../../images/whale.png"
 
 const DataPortfolio = [{
     title: "Foodera — Food Landing Page Template",
@@ -48,6 +49,15 @@ const DataPortfolio = [{
     inform: "I redesigned this website using  ",
     design:"React and Sass",
     feature:"Top Features:"
+},
+{
+    title: "whale",
+    url: "https://whale-7582d.web.app",
+    image: whale,
+    show: "Whale",
+    inform: "I designed this project by design Figma  ",
+    design:"React and Sass",
+    feature:"Top Features:",
 }
 ]
 

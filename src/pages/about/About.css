@@ -48,9 +48,12 @@
 }
 .about .merg .download {
   width: 200px;
-	box-shadow: 0px 10px 14px -7px #276873;
-	background:linear-gradient(to bottom, #176ab7 5%, #113f67 100%);
-	background-color:#176ab7;
+
+  background-image: linear-gradient(to right, #176ab7 0%, #113f67 51%, #176ab7 100%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-size: 200% auto;
+  transition: 0.5s;  
+
 	border-radius:8px;
 	display:inline-block;
 	cursor:pointer;
@@ -62,8 +65,8 @@
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
 	&:hover {
-	background:linear-gradient(to bottom, #113f67 5%, #176ab7 100%);
-	background-color:#113f67;
+    background-position: right center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
  &:active {
 	position:relative;
@@ -77,7 +80,7 @@
     width: 100vw;
   }
   .about .profile {
-    width: 80%;
+    width: 95%;
   }
   .about .merg h4 {
     font-size: 25px;
@@ -85,10 +88,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    margin: 0;
-    padding: 0;
-  }
+
   .about .merg ul {
     padding: 0;
   }
@@ -108,6 +108,7 @@
     width: 100%;
     font-size: 20px;
     padding: 0;
+    margin: 0;
   }
   .about .merg p span {
     font-weight: 400;

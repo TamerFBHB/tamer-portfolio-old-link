@@ -4,7 +4,6 @@ import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MainPage from "./pages/mainPage/MainPage";
-import CursorPointer from "./component/CursorPointer";
 
 const router =createBrowserRouter([
   {
@@ -20,6 +19,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    <CursorPointer />
   </React.StrictMode>
 );

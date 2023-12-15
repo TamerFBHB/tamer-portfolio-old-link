@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
   .education .merg .details h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .education .merg .details h5 {
     font-size: 18px;
@@ -84,9 +84,7 @@
     margin: 0 20px;
   }
   .education .merg .details .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 10px;
+    gap: 5px;
   }
   .education .merg .details .card {
     width: 120px;

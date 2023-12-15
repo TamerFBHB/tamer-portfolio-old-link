@@ -6,15 +6,13 @@ import { Link } from "react-router-dom";
 const About = ({ about, moveAbout }) => {
   return (
     <>
-    
-    
       <div ref={about} className="about" onClick={moveAbout}>
-        
-        <div className="merg">
-          
-            <h2>About</h2>
 
-            <div className="details">
+        <div className="merg">
+
+          <h2>About</h2>
+
+          <div className="details">
             <Container>
               <ul>
                 <li>
@@ -26,7 +24,7 @@ const About = ({ about, moveAbout }) => {
                 <li>
                   Phone : <span>(+2)-0127-7080-2197</span>
                 </li>
-              
+
               </ul>
               <div className="profile">
                 <h4>Professional Profile</h4>
@@ -41,13 +39,12 @@ const About = ({ about, moveAbout }) => {
                   clean, well organized, and optimized for performance.
                 </p>
                 <Link to="../../component/Download/Tamer Fouad_CV.pdf"
-                  target="_blank" download  className="download">
+                  target="_blank" download className="download">
                   Download CV
                 </Link>
               </div>
-           
-          </Container>
-           </div>
+            </Container>
+          </div>
         </div>
       </div>
     </>

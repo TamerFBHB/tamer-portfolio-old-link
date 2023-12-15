@@ -46,6 +46,7 @@ const Education = ({ education, moveEducation }) => {
         <div className="headerTTT">
           <h2>Education</h2>
         </div>
+
         <div className="details">
           <Container>
             <h4>Bachelor in Commerce, Ein Shams university, Cairo, Egypt.</h4>
