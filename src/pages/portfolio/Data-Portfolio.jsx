@@ -51,11 +51,11 @@ const DataPortfolio = [{
     feature:"Top Features:"
 },
 {
-    title: "whale",
+    title: "whale is a design made in Figma from Upworkwebsite and I coded it ",
     url: "https://whale-7582d.web.app",
     image: whale,
     show: "Whale",
-    inform: "I designed this project by design Figma  ",
+    inform: "I designed this project by ",
     design:"React and Sass",
     feature:"Top Features:",
 }

@@ -15,26 +15,35 @@
 .porto .merg h5{
   color:  var(--lineH1);
 }
+
+.mySwiper{
+  margin-top: 40px;
+  height: 50vh;
+}
+
 .porto .merg .webSite{
   width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0px;  
-}
-.porto .merg .webSite .image{
-  width: 50%;  
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #0000003d;
+}
+.porto .merg .webSite .image{
+  width: 100%;  
+  height: 50%;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 .porto .merg .webSite .image img{
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px #0000008d;
+  border: 1px solid #87C0CD;
+  border-radius:  10px;
 }
 .porto .merg .webSite .image:hover img{
   box-shadow:none ;
@@ -72,17 +81,18 @@
   opacity: 1;
 }
 .porto .merg .webSite .buttons{
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  margin-top: 10px;
 }
 .porto .merg .webSite .btn {
-  width: 70%;
-  height: 50px;
+  width: 80%;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -117,39 +127,31 @@
     width: 100vw;
     height: 100%;
   }
+  .mySwiper{
+    margin-top: 60px;
+    height: 50vh;
+  }
 
 
 }
 
 @media (max-width: 768px) {
-  .porto .merg .webSite{
-    width: 100%;
-    height: 250px;
-    margin: 25px 5px;
+  .mySwiper{
+    margin-top: 60px;
+    height: 45vh;
   }
-  .porto .merg .webSite .image img{
-    width: 90%;
-    height: 150px;
-    box-shadow: 0px 0px 10px #0000008d;
+  .porto .merg .webSite .buttons{
+    height: 70%;
   }
 }
 @media (max-width: 420px){
-  .porto .merg .webSite{
-    height: 100px;
+
+  .mySwiper{
+    margin-top: 30px;
+    width: 100%;
+    height: 60vh;
   }
   .porto .merg .webSite .buttons{
-    justify-content:space-evenly;
-    align-items: center;
-    gap: 0px;
-  }
-  .porto .merg .webSite .btn {
-    width:100%;
-    height: 40px;
-  }
-  .porto .merg .webSite .image{
-  height: 100%;
-  }
-  .porto .merg .webSite .image img{
-    height: 100%;
+    height: 50%;
   }
 }

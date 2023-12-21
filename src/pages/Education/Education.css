@@ -21,7 +21,7 @@
 .education .merg .details .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 30px;
+  gap: 25px;
 }
 .education .merg .details .card {
   width: 120px;

@@ -110,7 +110,7 @@ body::-webkit-scrollbar {
 }
 @media (max-width: 420px) {
   .details {
-    width: 100%;   
+    width: 100%;  
   }
   .merg h1 {
     font-size: 30px;
@@ -121,5 +121,12 @@ body::-webkit-scrollbar {
   }
   .merg h2::after {
     margin-top: 50px;
+  }
+  .merg {
+    padding: 28px 0px  100px 10px ;
+  }
+  .container {
+    padding-left:  10px;
+    padding-right:  0px;
   }
 }
