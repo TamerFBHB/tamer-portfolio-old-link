@@ -15,7 +15,7 @@ const Home = ({ moveHome, moveContact, home }) => {
             <div className="tag-wrap ">
               <img src={tamerPhoto} alt="" className="tamerPhoto" />
             </div>
-            <div class="hexagone"></div>
+            
             <div className="name">
               <h1>Tamer Fouad</h1>
 

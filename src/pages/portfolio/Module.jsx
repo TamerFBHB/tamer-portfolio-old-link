@@ -2,6 +2,7 @@
 import "./Module.css";
 import DataPortfolio from "./Data-Portfolio";
 import { NavLink } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
 
 const Module = ({ show, setShow }) => {
 
@@ -15,18 +16,13 @@ const Module = ({ show, setShow }) => {
             {DataPortfolio.map((e) => {
                 return (
                     <div className={`module  ${show === 0 ? "disapeare" : " "}
-                        ${show === e.show ? "apeare" : "disapeare "}`}>
+                        ${show === e.show ? "apeare" : "disapeare "}`}
+                        onClick={() => setShow(0)}>
 
                         <div className={`mainModule `}>
 
-                            <div className='CloseBar' onClick={() => setShow(0)} >
-                                <div className='BarClose'  >
-                                    <div className=' Barone'></div>
-                                    <div className=' Bartwo'></div>
-                                </div>
-                            </div>
-
-
+                            <IoClose  className='CloseBar'  onClick={() => setShow(0)}/>
+            
                             <div className="webDetails">
                                 <div className="titleModule"><h3>{e.title}</h3></div>
 

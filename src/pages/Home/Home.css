@@ -8,17 +8,19 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .tag-wrap {
   filter: drop-shadow(4px 4px 20px #00000046);
+  width: 100%;
+  height: 60%;
 }
 
 .home .merg .tamerPhoto {
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  width: 450px;
-  height: 450px;
+  transform: translateX(20%);
+  width: 50%;
+  height: 100%;
   -webkit-clip-path: polygon(
       92.32051% 40%,
       93.79385% 43.1596%,
@@ -111,9 +113,14 @@
   
 
 .home .merg .name {
-  position: absolute;
-  right: 20%;
-  top: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap : 10px;
+  width: 100%;
+  height: 40%;
 }
 .home h1 {
   font-size: 50px;
@@ -121,13 +128,11 @@
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 50px;
   letter-spacing: 4px;
   color: var(--textHello);
   text-shadow: 2px 5px 5px #0000007e;
 }
 .home .FrontEnd {
-  margin: 25px 0;
   text-align: center;
   overflow: hidden;
 }
@@ -140,7 +145,6 @@
   right: 10px;
   text-align: center;
   font-size: 35px;
-  margin: 20px 0;
 }
 .home .merg .social .bi {
   color: var(--textHello);
