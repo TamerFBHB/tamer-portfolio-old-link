@@ -15,7 +15,7 @@ const MainPage = () => {
 
 <Logo />
         <h1>This is the old design for my Portfolio, and you can access the new design from this link</h1>
-        <a href="https://myportfolio-tamer.web.app/">https://myportfolio-tamer.web.app/</a>
+        <a href="https://portfolio-tamer.vercel.app/">https://portfolio-tamer.vercel.app/</a>
         <Lottie animationData={aboutAnimat} style={{ width: 350 }} />;
 
       </div>
