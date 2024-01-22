@@ -15,7 +15,7 @@ const MainPage = () => {
 
 <Logo />
         <h1>This is the old design for my Portfolio, and you can access the new design from this link</h1>
-        <a href="https://myportfolio-tamer.web.app/">https://myportfolio-tamer.web.app/</a>
+        <a href="https://tamer-portfolio-30533.web.app/">https://tamer-portfolio-30533.web.app/</a>
         <Lottie animationData={aboutAnimat} style={{ width: 350 }} />;
 
       </div>
